@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="uk">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Форма</title>
+  </head>
+  <body>
+    <h1>Форма</h1>
+    <form action="" method="">
+      <fieldset>
+        <legend>Контактна інформація</legend>
+        <div>
+          <label>
+            Повне ім'я:
+            <input
+              type="text"
+              placeholder="Введіть ваше повне ім'я"
+              name="name"
+              required
+            />
+          </label>
+        </div>
+        <div>
+          <label>
+            Ваш email:
+            <input
+              type="email"
+              placeholder="Введіть вашу email"
+              name="email"
+              required
+            />
+          </label>
+        </div>
+        <div>
+          <label>
+            Ваш номер телефону:
+            <input type="text" placeholder="+380730000000" name="tel" />
+          </label>
+        </div>
+        <div>
+          <label>
+            Пароль:
+            <input
+              type="password"
+              placeholder="Введіть надійний пароль"
+              name="password"
+              required
+            />
+          </label>
+        </div>
+        <div>
+          <label>
+            Пароль ще раз:
+            <input
+              type="password"
+              placeholder="Повторіть ваш пароль"
+              name="password"
+              required
+            />
+          </label>
+        </div>
+      </fieldset>
+      <fieldset>
+        <legend>Персональна інформація</legend>
+        <span>Стать:</span>
+        <input type="radio" id="male" name="gender" value="Чоловіча" checked />
+        <label for="male">Чоловіча</label>
+        <input type="radio" id="female" name="gender" value="Жіноча" />
+        <label for="female">Жіноча</label>
+        <br>
+        <span>Рік народження:</span>
+        <input type="date" />
+        <br>
+        <span>Курс:</span>
+        <select name="kurs">
+          <option value="disabled" selected disabled>Виберіть Ваш курс</option>
+          <option value="Front-End">Front-End</option>
+          <option value="Back-End">Back-End</option>
+          <option value="Project Management">Project Management</option>
+          <option value="QA Manual">QA Manual</option>
+        </select>
+        <p>Ваша повна адреса проживання:</p>
+        <textarea name="live" id="live" cols="30" rows="10" placeholder="Ваша повна адреса"></textarea>
+        <br>
+        <input type="checkbox" required name="agree"><span>Я погоджуюсь з обробкою персональних данних</span>
+        <input type="submit" value="Відправити форму">
+        <input type="reset" value="Очистити всі поля">
+      </fieldset>
+    </form>
+  </body>
+</html>
